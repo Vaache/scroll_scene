@@ -6,11 +6,11 @@ debug it all with GSAP‑style markers. Pure Flutter, no dependencies.
 
 | Pin + stagger | Pin + keyframes | Horizontal from vertical |
 | --- | --- | --- |
-| ![hero](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/hero.gif) | ![phone](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/phone.gif) | ![gallery](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/gallery.gif) |
+| ![hero](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/hero.webp) | ![phone](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/phone.webp) | ![gallery](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/gallery.webp) |
 
 | Reveal (unpinned triggers) | Snap points | Debug markers |
 | --- | --- | --- |
-| ![reveal](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/reveal.gif) | ![snap](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/snap.gif) | ![markers](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/markers.gif) |
+| ![reveal](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/reveal.webp) | ![snap](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/snap.webp) | ![markers](https://raw.githubusercontent.com/Vaache/scroll_scene/main/doc/media/markers.webp) |
 
 ## Why
 
@@ -192,8 +192,23 @@ Descendants can also call `ScrollSceneScope.of(context)`.
 
 ## Example
 
-`example/` is a scroll‑telling landing page with every feature. The README
-media is rendered headlessly from it with `tool/render_media.sh`.
+[`example/lib/main.dart`](example/lib/main.dart) (the **Example** tab on
+pub.dev) is one self‑contained file: all five scenes above, the theme and the
+markers toggle, built on `material.dart` and `scroll_scene` only. To run it,
+create an app, add the package and paste the file over `lib/main.dart`:
+
+```bash
+flutter create scroll_scene_demo
+cd scroll_scene_demo
+flutter pub add scroll_scene
+```
+
+Every scene (`HeroScene`, `PhoneScene`, `GalleryScene`, `RevealScene`,
+`SnapScene`) is a sliver you can drop into your own `CustomScrollView`. Copy it
+together with the colour constants and `SectionLabel` from the same file.
+
+The README media is rendered headlessly from the example with
+`tool/render_media.sh`.
 
 ## License
 

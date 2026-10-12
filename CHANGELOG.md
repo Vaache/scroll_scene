@@ -1,3 +1,10 @@
+## 0.1.1
+
+- The example is now a single self-contained `example/lib/main.dart`: paste it
+  into a new app and run, or copy any scene into your own `CustomScrollView`.
+- README demos are animated WebP at 30 fps instead of 20 fps GIFs, about half
+  the size, so they load faster and play smoothly.
+
 ## 0.1.0
 
 Initial release.

@@ -6,13 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:scroll_scene/scroll_scene.dart';
-import 'package:scroll_scene_example/landing_page.dart';
-import 'package:scroll_scene_example/scenes/gallery_scene.dart';
-import 'package:scroll_scene_example/scenes/hero_scene.dart';
-import 'package:scroll_scene_example/scenes/phone_scene.dart';
-import 'package:scroll_scene_example/scenes/reveal_scene.dart';
-import 'package:scroll_scene_example/scenes/snap_scene.dart';
-import 'package:scroll_scene_example/theme.dart';
+import 'package:scroll_scene_example/main.dart';
 
 /// Renders README media frame by frame. Skipped unless `SCENE_MEDIA_DIR`
 /// points at an output directory; `tool/render_media.sh` turns the frames
