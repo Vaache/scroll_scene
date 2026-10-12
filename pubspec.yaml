@@ -1,0 +1,26 @@
+name: scroll_scene
+description: >-
+  GSAP ScrollTrigger for Flutter: pin sections, scrub timelines by scroll
+  progress, keyframes, stagger, snap points and debug markers. Pure Flutter.
+version: 0.1.0
+repository: https://github.com/Vaache/scroll_scene
+issue_tracker: https://github.com/Vaache/scroll_scene/issues
+topics:
+  - scroll
+  - animation
+  - scrolltrigger
+  - parallax
+  - sliver
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.29.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ">=5.0.0 <7.0.0"
